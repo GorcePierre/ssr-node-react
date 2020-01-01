@@ -6,7 +6,7 @@
 
 ```npm install ``` 
 
-install necessaty folders to launch project
+install necessary folders to launch project
 
 ```npm start```
 
