@@ -8,6 +8,6 @@
 
 install necessaty folders to launch project
 
-```npm start````
+```npm start```
 
 launch server 
