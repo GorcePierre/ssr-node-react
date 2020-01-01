@@ -4,10 +4,10 @@
 
 ### Installing
 
-```npm install ``` 
+`npm install`
 
 install necessary folders to launch project
 
-```npm start```
+`npm start`
 
-launch server 
+launch server

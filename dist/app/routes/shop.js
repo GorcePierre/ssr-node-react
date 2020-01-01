@@ -8,6 +8,6 @@ const path_1 = require("../util/path");
 const path_2 = __importDefault(require("path"));
 const routerShop = express_1.default.Router();
 exports.routerShop = routerShop;
-routerShop.get("/", (req, res, next) => {
+routerShop.get("/", (_req, res, _next) => {
     res.sendFile(path_2.default.join(path_1.DirRoot, "..", "public", "views", "shop.html"));
 });

@@ -8,7 +8,7 @@ const products: any[] = [];
 
 routerAdmin.get(
   "/add-product",
-  (req: Request, res: Response, next: NextFunction) => {
+  (_req: Request, res: Response, _next: NextFunction) => {
     res.sendFile(
       path.join(DirRoot, "..", "public", "views", "add-product.html")
     );
@@ -16,7 +16,7 @@ routerAdmin.get(
 );
 routerAdmin.post(
   "/add-product",
-  (req: Request, res: Response, next: NextFunction) => {
+  (_req: Request, res: Response, _next: NextFunction) => {
     res.redirect("/");
   }
 );

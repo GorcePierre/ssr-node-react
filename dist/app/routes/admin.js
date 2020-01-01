@@ -10,9 +10,9 @@ const routerAdmin = express_1.default.Router();
 exports.routerAdmin = routerAdmin;
 const products = [];
 exports.products = products;
-routerAdmin.get("/add-product", (req, res, next) => {
+routerAdmin.get("/add-product", (_req, res, _next) => {
     res.sendFile(path_1.default.join(path_2.DirRoot, "..", "public", "views", "add-product.html"));
 });
-routerAdmin.post("/add-product", (req, res, next) => {
+routerAdmin.post("/add-product", (_req, res, _next) => {
     res.redirect("/");
 });
