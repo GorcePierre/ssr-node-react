@@ -4,10 +4,18 @@
 
 ### Installing
 
-```npm install ``` 
+`npm install`
 
 install necessary folders to launch project
 
-```npm start```
+`npm start`
 
-launch server 
+launch server
+
+### Paths
+
+`/` : home page to products list
+
+`/admin` : paths to admin the product page
+
+`/admin/add-product`: add products pages
