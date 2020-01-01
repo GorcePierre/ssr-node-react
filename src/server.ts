@@ -10,6 +10,10 @@ const app: Express = express();
 const port = 3000;
 
 const server = async () => {
+  app.set("views", __dirname + "/views");
+  app.set("view engine", "jsx");
+  app.engine("jsx", require("express-react-views").createEngine());
+
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(express.static(path.join(DirRoot, "..", "public")));
 
@@ -17,9 +21,7 @@ const server = async () => {
   app.use(routerShop);
 
   app.use((_req: Request, res: Response, _next: NextFunction) => {
-    res
-      .status(404)
-      .sendFile(path.join(DirRoot, "..", "public", "views", "404.html"));
+    res.status(404).render("404");
   });
 
   app.listen(port, () => {
