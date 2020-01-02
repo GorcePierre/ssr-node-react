@@ -18,4 +18,4 @@ launch server
 
 `/admin` : paths to admin the product page
 
-`/admin/add-product`: add products pages
+`/admin/add-product`: add products
