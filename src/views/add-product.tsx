@@ -1,9 +1,14 @@
 import React from "react";
 import Header from "./components/header";
+import Meta from "./metadata/meta";
 
 const AddProduct = () => {
+  const props = {
+    title: "add-products"
+  };
   return (
-    <div>
+    <html lang="fr">
+      <Meta {...props} />
       <body>
         <Header />
         <main>
@@ -17,7 +22,7 @@ const AddProduct = () => {
           </form>
         </main>
       </body>
-    </div>
+    </html>
   );
 };
 
