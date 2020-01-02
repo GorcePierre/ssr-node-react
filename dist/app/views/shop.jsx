@@ -7,12 +7,12 @@ const react_1 = __importDefault(require("react"));
 const header_1 = __importDefault(require("./components/header"));
 const meta_1 = __importDefault(require("./metadata/meta"));
 const Shop = () => {
-    const props = {
+    const metaProps = {
         title: "shop"
     };
     return (<>
       <html lang="fr">
-        <meta_1.default {...props}/>
+        <meta_1.default {...metaProps}/>
         <body>
           <header_1.default />
           <main>

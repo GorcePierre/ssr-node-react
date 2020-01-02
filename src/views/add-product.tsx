@@ -1,14 +1,15 @@
 import React from "react";
 import Header from "./components/header";
 import Meta from "./metadata/meta";
+import { MetaProps } from "../type/meta.type";
 
 const AddProduct = () => {
-  const props = {
+  const metaProps: MetaProps = {
     title: "add-products"
   };
   return (
     <html lang="fr">
-      <Meta {...props} />
+      <Meta {...metaProps} />
       <body>
         <Header />
         <main>

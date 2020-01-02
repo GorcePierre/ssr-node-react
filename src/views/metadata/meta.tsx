@@ -1,6 +1,7 @@
 import React from "react";
+import { MetaProps } from "../../type/meta.type";
 
-const Meta = (props: any) => {
+const Meta = (props: MetaProps) => {
   return (
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />

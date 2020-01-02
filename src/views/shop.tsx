@@ -1,15 +1,16 @@
 import React from "react";
 import Header from "./components/header";
 import Meta from "./metadata/meta";
+import { MetaProps } from "../type/meta.type";
 
 const Shop = () => {
-  const props = {
+  const metaProps: MetaProps = {
     title: "shop"
   };
   return (
     <>
       <html lang="fr">
-        <Meta {...props} />
+        <Meta {...metaProps} />
         <body>
           <Header />
           <main>
